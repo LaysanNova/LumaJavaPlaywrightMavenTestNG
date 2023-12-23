@@ -1,0 +1,7 @@
+browser = chrome
+url =
+username =
+password = 
+headless = false
+width = 1920
+height = 1080
