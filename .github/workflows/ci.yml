@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: View SW Version
         run: sw_vers
-  dependent-job:
+  dependant-job:
     runs-on: windows-latest
     needs: run-shell-commands
     steps:
