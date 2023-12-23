@@ -20,6 +20,6 @@
             echo "Inside group"
             echo "::endgroup::"
         - name: Masking a value
-          run: "::add-mask::SecretsString"
+          run: echo "::add-mask::SecretsString"
         - name: Echo a secret
-          run: Echo "Secret String
+          run: echo "Secret String
