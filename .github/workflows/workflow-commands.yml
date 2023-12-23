@@ -14,3 +14,12 @@
           run: echo "::warning title:Warning title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"
         - name: Setting an notice message with params
           run: echo "::notice title:Notice title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"
+        - name: Group of logs
+          run: |
+            echo "::group::MY group title"
+            echo "Inside group"
+            echo "::endgroup::"
+        - name: Masking a value
+          run: "::add-mask::SecretsString"
+        - name: Echo a secret
+          run: Echo "Secret String
