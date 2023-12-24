@@ -9,6 +9,6 @@ jobs:
       - run: |
           echo @GITHUB_SHA
           echo @GITHUB_REF
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
 
 
