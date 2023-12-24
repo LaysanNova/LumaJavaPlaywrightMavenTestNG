@@ -24,7 +24,7 @@
         run:
           shell: pwsh
       steps:
-        - name: Display Working Directly $List Files
+        - name: Display Working Directly $ List Files
           run: |
             Get-Location
             dir
