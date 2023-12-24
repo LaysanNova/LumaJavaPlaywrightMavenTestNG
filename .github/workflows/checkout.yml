@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List Files Before
-        run: ls-a
+        run: ls -a
       - name: Checkout
         run: |
           git init
@@ -14,4 +14,4 @@ jobs:
           git fetch origin
           git checkout main
       - name: List Files After
-        run: ls-a
+        run: ls -a
