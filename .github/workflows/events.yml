@@ -1,7 +1,6 @@
 name: Repository Events
 on: [push, pull_request, issues]
 
-
 jobs:
   checkout-test:
     runs-on: ubuntu-latest
