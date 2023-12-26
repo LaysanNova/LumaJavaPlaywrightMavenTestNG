@@ -5,7 +5,7 @@ run-name: "Expressions & Contexts by @${{ github.actor }}, event: ${{ github.eve
 jobs:
   runs-on-issues-and-prs:
     runs-on: ubuntu-latest
-    if: contains(fromJson'["issues", "pull_request"]', github.event_name)
+    if: contains(fromJson('["issues", "pull_request"]'), github.event_name)
     steps:
       - name: Run only if issue has a bug label
         if: contains(github.event.issue.labels.*.name, 'bug') # labels.*.name -> ['bug', 'documentation']
