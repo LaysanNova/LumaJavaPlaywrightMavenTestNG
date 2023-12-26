@@ -14,7 +14,7 @@ jobs:
       - name: Runs on Failure
         # if: failure()
         # run: echo 'Runs only on failure'
-        if: failure() && steps.step-2.conclusion == 'fail'
+        if: failure() && steps.step-2.conclusion == 'failure'
         run: echo 'Step 2 has failed'
       - name: Runs on Success
         # This is not needed (DEFAULT)
