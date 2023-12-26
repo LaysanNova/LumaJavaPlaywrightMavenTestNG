@@ -9,7 +9,7 @@ jobs:
         id: expressions
         run: |
           echo ${{ 1 }}
-          echo ${{'This is a ctring' }}
+          echo ${{ 'This is a string' }}
           echo ${{ null }}
           echo ${{ true }}
           echo ${{ 1 > 2 }}
