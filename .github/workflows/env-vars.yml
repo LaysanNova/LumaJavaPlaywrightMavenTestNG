@@ -16,6 +16,14 @@ jobs:
         run: echo $GITHUB_REF
       - name: Log Context
         run: echo '${{ github.ref }}'
+      - name: Multiline ENV Var
+        run: |
+          DELIMITER=1234 
+          echo "RANDOM_JOKE<<$DELIMITER" >> "$GITHUB_ENV"
+          echo "Here is a joke 1:" >> "$GITHUB_ENV"
+          curl -s https://icanhazdadjoke.com/api >> "$GITHUB_ENV"
+          echo "" >> "$GITHUB_ENV"
+          echo "$DELIMITER" >> "$GITHUB_ENV"
       - name: Set Env Var
         run: |
           echo "NEW_ENV_VAR=$(date)" >> "$GITHUB_ENV"
@@ -30,3 +38,4 @@ jobs:
           echo $WF_LEVEL_ENV
           echo $JOB_LEVEL_ENV
           echo $NEW_ENV_VAR
+          echo $RANDOM_JOKE
