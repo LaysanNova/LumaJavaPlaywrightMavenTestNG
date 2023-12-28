@@ -25,8 +25,8 @@ jobs:
       - run: echo "step-output=value 2" >> $GITHUB_OUTPUT
         id: step-2
       - run: |
-          echo '${{ steps.step-1.outputs.step-output}}'
-          echo '${{ steps.step-2.outputs.step-output}}'
+          echo '${{ steps.step-1.outputs.step-output }}'
+          echo '${{ steps.step-2.outputs.step-output }}'
   node-matrix:
     strategy:
       matrix:
