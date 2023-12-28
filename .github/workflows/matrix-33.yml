@@ -9,7 +9,7 @@ jobs:
         node-version: [14, 15, 16]
     steps:
       - run: node -v
-      - uses: action/setup-node@v3
+      - uses: action/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - run: node -v
