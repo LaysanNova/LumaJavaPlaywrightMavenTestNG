@@ -4,11 +4,11 @@ on:
     inputs:
       os:
         description: Operating System
-        default: "window-latest, ubuntu-latest"
+        default: "window-latest,ubuntu-latest"
         type: string
       node-version:
-        description: Node version
-        default: "14, 15, 16"
+        description: Node Version
+        default: "14,15,16"
         type: string
 jobs:
   prepare-metrix:
