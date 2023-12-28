@@ -1,6 +1,7 @@
 name: Status Check Functions
 on:
   push:
+
 jobs:
   job-1:
     runs-on: ubuntu-latest
