@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 #    permissions: read-all or {}       -> disable all permissions
     permissions:
-     issues: read
+     issues: write
 #     contents: read
     steps:
       - name: Comment on New PRs
