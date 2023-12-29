@@ -24,8 +24,4 @@ jobs:
       - name: echo a string
         run: Write-Output "Windows String"
       - name: Error Step
-        run: doesnotexistsffv
-
-
-
-
+        run: doesnotexists
